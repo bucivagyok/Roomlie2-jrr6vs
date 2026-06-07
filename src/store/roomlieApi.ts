@@ -6,10 +6,10 @@ export const roomlieApi = createApi({
     baseQuery: fetchBaseQuery({ 
         baseUrl: import.meta.env.VITE_API_URL,
         credentials: 'include',
-        /*prepareHeaders: (headers) => {
+        prepareHeaders: (headers) => {
             headers.set('X-Neptun-Code', import.meta.env.VITE_NEPTUN_CODE)
             return headers
-        }*/
+        }
     }),
     tagTypes: ['Users', 'Tables'] as ApiTag[],
     endpoints: (builder) => ({
